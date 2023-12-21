@@ -1,0 +1,108 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.content {
+  background-color: #161e29;
+}
+
+.pictures__grid {
+  margin: 64px 128px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+}
+
+.picture {
+  width: 100%;
+  height: 0;
+  padding-bottom: 75%;
+  object-fit: cover;
+  position: relative;
+}
+
+.picture__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap");
+
+body {
+  background-color: #161e29;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.dropdown-container {
+  display: flex;
+  gap: 20px;
+  margin: 64px 128px;
+}
+
+.dropdown {
+  width: max-content;
+  padding: 8px;
+  border-radius: 4px;
+  background-color: #2e3f57;
+  color: whitesmoke;
+  border: 1px solid #2e3f57;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #1a2533;
+  }
+}
+
+.drop {
+  label {
+    display: flex;
+    flex-direction: column;
+    color: white;
+  }
+}
+
+
+@media screen and (max-width: 1440px) {
+  .pictures__grid {
+    margin: 16px 32px;
+  }
+
+  .dropdown-container {
+    display: flex;
+    gap: 20px;
+    margin: 32px 32px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .pictures__grid {
+    margin: 16px 32px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .pictures__grid {
+    margin: 16px 32px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .pictures__grid {
+    margin: px 32px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+

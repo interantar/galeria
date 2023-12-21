@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap");
+
+body {
+  background-color: #161e29;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.picture {
+  &__modal {
+    width: 720px;
+
+    img {
+      border-radius: 12px 12px 0px 0px;
+      width: 100%;
+    }
+  }
+
+  &__modal-info {
+    border: 24px;
+    background-color: #161e29;
+    color: whitesmoke;
+    padding: 24px;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .tags {
+      width: 100%;
+      display: flex;
+      gap: 12px;
+      margin-top: 12px;
+      padding: 12px 0px;
+
+      .tag {
+        background-color: #2e3f57;
+        padding: 6px 12px;
+        border-radius: 12px;
+        font-size: 12px;
+      }
+
+      .category {
+        background-color: rgb(124, 69, 69);
+      }
+
+      .year {
+        background-color: rgb(156, 102, 1);
+      }
+    }
+
+    .button {
+      background-color: rgb(0, 110, 255);
+      padding: 6px 12px;
+      border-radius: 6px;
+
+      &:hover {
+        background-color: rgb(1, 84, 192);
+      }
+    }
+  }
+}
